@@ -1,0 +1,358 @@
+.heroscreen-donate {
+	background: url(../assets/images/donate/panda_bg.jpg) no-repeat;
+	height: 390px;
+	object-fit: fill;
+	background-position: 50%;
+	background-size: cover;
+}
+
+.donate {
+	background-color: var(--orange_grad);
+	padding: 40px 220px 180px;
+
+	&__title {
+		font-weight: 400;
+		font-size: 36px;
+		line-height: 130%;
+		color: #FFFFFF;
+		margin: 0px 0px 10px 0px;
+	}
+
+	&__text {
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 140%;
+		color: #FFFFFF;
+		margin: 0px 0px 40px 0px;
+	}
+
+	&__subtitle {
+		font-weight: 400;
+		font-size: 36px;
+		line-height: 130%;
+		color: #FE9013;
+		margin: 0px 0px 60px 0px;
+	}
+
+	&__wrapper {
+		background: var(--bg-works);
+		padding: 41px 0px 61px 0px;
+		border-radius: 20px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	&__subtext {
+		font-weight: 400;
+		font-size: 24px;
+		line-height: 120%;
+		color: #333B41;
+		text-align: center;
+	}
+
+	&__counter {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0px 0px 48px 0px;
+	}
+
+	&__counter-left {
+		margin: 0px 89px 0px 0px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		position: relative;	
+		&::after {
+			content: '';
+			display: inline-block;
+			width: 14px;
+			height: 14px;
+			background: url(../assets/images/donate/x_icon.svg) no-repeat;
+			position: absolute;
+			top: 25%;
+			right: -25%;
+		}
+	}
+
+	&__number {
+		font-weight: 500;
+		font-size: 72px;
+		line-height: 80%;
+		text-align: center;
+		text-transform: uppercase;
+		color: var(--main);
+		margin: 0px 0px 11px 0px;
+	}
+
+	&__description {
+		display: flex;
+		flex-direction: column;
+
+	}
+
+	&__counter-img {}
+
+	&__image {}
+}
+
+
+
+/*-----лічильник донатів---------------*/
+
+.amount-wrap {
+	margin: 0px 0px 50px 0px;
+}
+
+.title {}
+
+.amount-title {
+	margin: 0px 0px 10px 4px;
+}
+
+.amount-button-wrap {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	width: 976px;
+	height: 27px;
+	background: #404950;
+	border-radius: 2px;
+	padding-right: 15px;
+	position: relative;
+	margin: 0px 0px 50px 0px;
+}
+
+.amount-button-item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+	z-index: 1000;
+}
+
+.amount-button-title {
+	display: block;
+	font-weight: 500;
+	font-size: 26px;
+	line-height: 140%;
+	text-transform: uppercase;
+	color: #333b41;
+	cursor: pointer;
+	padding-top: 38px;
+	position: relative;
+	padding: 38px 0px 0px 13px;
+}
+
+.amount-button-title::before {
+	content: '';
+	display: inline-block;
+	width: 10px;
+	height: 20px;
+	background: url(../assets/images/donate/dolar.svg) no-repeat;
+	position: absolute;
+	top: 60%;
+	left: 0;
+	padding: 0px 20px 0px 0px;
+}
+
+.icon {}
+
+.label-dollar {}
+
+.amount-active {}
+
+
+
+
+.amount-button-item input[type="radio"] {
+	display: none;
+}
+
+.amount-button-item label {
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+	line-height: 10px;
+	user-select: none;
+}
+
+.amount-button-item label:before {
+	content: "";
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	position: absolute;
+	top: 8px;
+	left: 50%;
+	transform: translateX(-50%);
+	background: #ffee2e;
+}
+
+.amount-button-item:first-child:after {
+	content: '';
+	width: 900px;
+	height: 2px;
+	background: wheat;
+	position: absolute;
+	top: 17%;
+	left: 50%;
+}
+
+
+.amount-button-item.amount-active label::after {
+	content: "";
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	position: absolute;
+	top: -7px;
+	left: 50%;
+	transform: translateX(-50%);
+	background: url(/online-zoo/assets/images/donate/roller_icon.svg);
+	cursor: pointer;
+}
+
+.amount-button-item:first-child label:before {
+	left: -9px;
+	transform: translateX(0);
+}
+
+.amount-button-item.amount-active:first-child label::after {
+	left: -24px;
+	transform: translateX(0);
+}
+
+// --------input another-----------
+
+.amount-input-wrap {
+	display: flex;
+	flex-direction: column;
+	align-items: center;	
+	position: relative;
+	margin: 0px 0px 25px 0px;
+}
+
+.another-amount-input {
+	display: block;
+	position: relative;
+	height: 54px;
+	width: 268px;
+	left: 0px;
+	border: 1px solid #929699;
+	border-radius: 2px;
+	background: transparent;
+	padding: 16px 9px;
+}
+
+.another-amount-input::after {
+	// content: '../assets/images/donate/dolar.svg';
+
+}
+
+.another-amount-label {
+	// background: url(../assets/images/donate/dolar.svg) no-repeat;
+	// display: inline-block;
+	// position: relative;
+	// left: 0;
+	// top: 0;
+	// width: 10px;
+	// height: 20px;
+	// background: rgb(196, 65, 14);
+
+}
+
+.another-amount-label-img {
+	position: absolute;
+	top: 34%;
+	right: 5%;
+}
+
+// ---------------timing ---
+
+
+.feed-timing-wrap {
+	display: flex;
+	gap: 50px;
+	margin: 0px 0px 31px 0px;
+}
+
+.radio-monthly-item {}
+
+.feed-timing-radio {
+	// width: 16px;
+	// height: 16px;
+	// position: absolute;
+	// z-index: -1;
+	// opacity: 0;
+}
+
+.radio-label {}
+
+.monthly-label {}
+
+.radio-monthly-label {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 140%;
+	color: var(--black-blue);
+}
+
+.once-label {}
+
+.checked-label {}
+
+
+
+
+.feed-timing-radio~.radio-label {
+	// position: relative;
+	// padding: 0 0 0 30px;
+	// cursor: pointer;
+}
+
+
+.feed-timing-radio~.radio-label:before {
+	// content: "";
+	// position: absolute;
+	// top: 4px;
+	// left: 5px;
+	// width: 16px;
+	// height: 16px;
+	// border: 1px solid var(--orange);
+	// border-radius: 50%;
+	// background: #fff;
+}
+
+
+.feed-timing-radio~.radio-label:after {
+	// content: "";
+	// position: absolute;
+	// width: 16px;
+	// height: 16px;
+	// top: 4px;
+	// left: 5px;
+	// border-radius: 50%;
+	// background: var(--green);
+	// opacity: 0;
+	// transition: all 0.5s;
+}
+
+// ---------button
+
+.donate-btn {
+	text-align: center;
+	margin: 0px 0px 30px 0px;
+}
+
+// ------donate share
+
+.donate-share {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 140%;
+	color: var(--black-blue);
+}

@@ -1,0 +1,52 @@
+.backstage {
+	color: var(--text);
+	padding: 140px 0px 0px 0px;
+	position: relative;
+	&::after {
+		content: '';
+		background: url(../assets/images/backstage/flower_foto1.png) no-repeat;
+		display: inline-block;
+		width: 393px;
+		height: 605px;
+		position: absolute;
+		top: 0;
+		right: -11%;
+	}
+
+	&__top {
+		display: flex;
+		margin: 0px 0px 180px 0px;
+	}
+
+	&__item {}
+
+	&__image {}
+
+	&__top-content {
+		font-weight: 400;
+		margin: 0px 0px 0px 87px;
+	}
+
+	&__title {
+		font-size: 48px;
+		line-height: 120%;
+		margin: 0px 0px 20px 0px;
+	}
+
+	&__subtitle {
+		font-size: 16px;
+		line-height: 130%;
+		margin: 0px 0px 54px 0px;
+	}
+
+	&__name {
+		font-size: 24px;
+		line-height: 120%;
+		margin: 0px 0px 34px 0px;
+	}
+
+	&__text {
+		font-size: 16px;
+		line-height: 140%;
+	}
+}

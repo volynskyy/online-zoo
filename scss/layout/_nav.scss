@@ -1,0 +1,33 @@
+.nav {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 140%;
+	
+	
+	&__items {
+		display: flex;
+	}
+	
+	&__item {
+		&:not(:last-child) {
+			margin: 0px 58px 0px 0px;
+		}
+	}
+	
+	&__link {
+		color: #ffff;
+		transition: all 0.2s;
+		&:hover {
+			color: var(--orange);
+			// color: blue;
+		}
+	}
+
+	&__link-active {
+		color: orange;
+	}
+}
+
+.link-active {
+	color: var(--orange);
+}

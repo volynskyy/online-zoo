@@ -1,0 +1,29 @@
+@media (max-width: $breakpoints_smal-desktop) {
+.backstage{
+
+	&::after {
+			content: '';
+			visibility: hidden;
+			background: url(../assets/images/backstage/flower_foto1.png) no-repeat;
+			display: inline-block;
+			width: 393px;
+			height: 605px;
+			position: absolute;
+			top: 0;
+			right: -11%;
+		}
+
+		&__top-content {
+			margin: 0px 0px 0px 0px;
+		}
+
+		&__item {
+			margin: 0px 30px 0px 0px;
+		}
+}
+}
+
+
+
+
+

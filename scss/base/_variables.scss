@@ -1,0 +1,29 @@
+:root {
+	--green: #4B9200;
+	--orange: #F9804B;
+	--yellow: #FFEE2E;
+	--orange_grad: #FED290;
+	--pink_gradient: #FEBDAB;
+	--red: #D31414;
+	--black_blue: #333B41;
+	--gray: #767474;
+	--gray_smoky: #ABABAB;
+	--light_gray: #F1F3F2;
+	--frosted_glass_white: #FDFDFF;
+	--white: rgba(255, 255, 255, 1);
+	--input: var(--main);
+	--header-footer: #000;
+	--button-hover: #E47209;
+	--button-active: var(--green);
+	--button-disabled: var(--grey);
+	--button-mistake: var(--red);
+	--text: var(--black_blue);
+	--title-works: #FE9013;
+	--text-works: #333B41;;
+	--bg-works: rgba(253, 253, 255, 0.52);
+}
+
+
+$breakpoints_smal-desktop: 1216px;
+$breakpoints_tablet: 765px;
+$breakpoints_mobile: 385px;

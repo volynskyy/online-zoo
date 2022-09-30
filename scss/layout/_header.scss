@@ -1,0 +1,56 @@
+.header {
+	background: var(--header-footer);	
+	padding: 17.55px 220px;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 140%;
+
+	&__row {
+		display: flex;
+		align-items: center;
+	}
+
+	&__logo {
+		margin: 0px 63px 0px 0px;
+	}
+
+	&__logo__title {
+	}
+
+	&__logo {}
+
+	&__img {}
+
+	&__nav {
+		flex: 1 1 auto;
+	}	
+
+	&__copy {
+		color: #ffff;
+	}
+
+}
+
+.logo {
+	text-align: center;
+	border: 1px solid var(--white);
+	// position: relative;
+	padding: 3.55px 4.75px;
+	&__title {
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 120%;
+		text-align: center;
+		color: var(--white);
+		background: url(/online-zoo/assets/images/heroscreen/bamboo.svg) no-repeat;
+		display: inline-block;
+		background-position: 9% 84%;
+		// position: relative;
+		// bottom: 0;
+		// left: 0;
+		// transform: translate(50%, 0);
+		// position: absolute;
+		// bottom: 0;
+		// left: 0;
+	}
+}
